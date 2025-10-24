@@ -7,7 +7,7 @@
 
 ## 🌱 開発の背景
 
-第一弾（筆談アプリ）では、書き順から文字を推定する方式を試みましたが、  
+[第一弾（筆談アプリ）](https://github.com/TomoyaYoshimoto/hand-write-app)では、書き順から文字を推定する方式を試みましたが、  
 - 精度向上が難しい  
 - 個人差による認識ばらつきが大きい  
 という課題がありました。
@@ -80,5 +80,3 @@
 
 ### ✍️ フリック入力画面（あ行）
 <img width="921" height="793" alt="スクリーンショット 2025-10-24 10 25 46" src="https://github.com/user-attachments/assets/390d12df-10b7-4beb-ac4d-edc7f1dcaef5" />
-
-
