@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# 📱 ALS患者向けフリック入力アプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+筆談支援アプリの第二弾として、  
+**同じ位置で指を少しだけ動かすだけで文字を入力できる**フリック入力型アプリを開発しました。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌱 開発の背景
 
-## Expanding the ESLint configuration
+第一弾（筆談アプリ）では、書き順から文字を推定する方式を試みましたが、  
+- 精度向上が難しい  
+- 個人差による認識ばらつきが大きい  
+という課題がありました。
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+そこで、より確実にコミュニケーションを取る方法として、  
+**フリック入力方式を採用**しました。
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 💡 コンセプト
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 手の移動範囲を最小限に。  
+- スマホのように「あ行」「か行」などのグループから選択し、  
+  指を少し動かすだけで文字を入力。  
+- 簡単な定型文もワンタップで送信できるよう設計。
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧩 実装した機能（第二弾）
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🎛 **フリック入力式UI**  
+  - 各行（あ行・か行・さ行…）を選択して文字入力。  
+  - 同じ位置で操作できるため、最小限の手の動きで入力可能。  
+
+- 💬 **定型文入力機能**  
+  - よく使う短文を登録しておき、ワンタップで送信。  
+  - 例：「緊急 → どこどこが痛い」「感謝 → ありがとう」など。  
+
+---
+
+## 🎯 開発方針
+
+- **すぐに動くものを作る → フィードバックをもらい改善**  
+- **システム設計は後回し、まず使える状態にする**  
+- **低コストでMVPを形に**  
+
+---
+
+## 🛠 技術構成
+
+- **Frontend:** React + TypeScript + Vite  
+- **特徴:** フリック入力UIの実装と定型文管理  
+
+---
+
+## 🚧 今後の展望
+
+- 入力内容の音声読み上げや外部送信機能の追加  
+- 看護師や家族との共同利用を想定したインターフェース改善  
+- 使用ログから操作性を分析し、より直感的なUIへ最適化  
+
+---
+
+## ❤️ 想い
+
+> ALS患者の方が「伝えられない」ことで苦しまないように。  
+> 技術で“伝える力”を取り戻すサポートをしたい。
+
+---
