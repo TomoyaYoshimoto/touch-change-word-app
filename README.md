@@ -57,7 +57,6 @@
 
 - 入力内容の音声読み上げや外部送信機能の追加  
 - 看護師や家族との共同利用を想定したインターフェース改善  
-- 使用ログから操作性を分析し、より直感的なUIへ最適化  
 
 ---
 
@@ -67,3 +66,19 @@
 > 技術で“伝える力”を取り戻すサポートをしたい。
 
 ---
+
+## 🚀 デモサイト
+🔗 **URL**  
+[https://eloquent-cascaron-c61476.netlify.app/](https://eloquent-cascaron-c61476.netlify.app/)
+
+---
+## 🎨 画面イメージ
+
+### 📱 行選択画面
+<img width="921" height="793" alt="スクリーンショット 2025-10-24 10 24 29" src="https://github.com/user-attachments/assets/4b02b523-b6e1-4fee-ab93-62349a410fb4" />
+
+
+### ✍️ フリック入力画面（あ行）
+<img width="921" height="793" alt="スクリーンショット 2025-10-24 10 25 46" src="https://github.com/user-attachments/assets/390d12df-10b7-4beb-ac4d-edc7f1dcaef5" />
+
+
