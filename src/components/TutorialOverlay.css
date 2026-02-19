@@ -1,0 +1,78 @@
+/* グリッドに完全に重なるオーバーレイ（半透明の暗い背景） */
+.tutorial-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  z-index: 10;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* セルハイライト（位置・サイズは JS で style に直接セット） */
+.tutorial-cell-highlight {
+  position: absolute;
+  border-radius: 0.5rem;
+  background-color: rgba(76, 175, 80, 0.45);
+  box-shadow: inset 0 0 0 3px #388e3c;
+}
+
+/* 指カーソル（位置は JS で style に直接セット） */
+.tutorial-cursor {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 68, 68, 0.85);
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  transition: left 0.45s ease, top 0.45s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.tutorial-cursor.step-hide {
+  opacity: 0;
+}
+
+/* メッセージ：グリッド内部の下端に配置 */
+.tutorial-message {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+  width: 90%;
+}
+
+.tutorial-message-main {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(25, 118, 210, 0.9);
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+.tutorial-message-sub {
+  display: block;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 0.35rem 0.9rem;
+  border-radius: 1rem;
+}
