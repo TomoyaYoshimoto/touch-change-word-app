@@ -73,10 +73,5 @@
 
 ---
 ## 🎨 画面イメージ
+![Adobe Express - 画面収録 2026-02-20 5 59 58](https://github.com/user-attachments/assets/7f1b3a21-e9fd-4146-9d01-49df0f16f76d)
 
-### 📱 行選択画面
-<img width="921" height="793" alt="スクリーンショット 2025-10-24 10 24 29" src="https://github.com/user-attachments/assets/4b02b523-b6e1-4fee-ab93-62349a410fb4" />
-
-
-### ✍️ フリック入力画面（あ行）
-<img width="921" height="793" alt="スクリーンショット 2025-10-24 10 25 46" src="https://github.com/user-attachments/assets/390d12df-10b7-4beb-ac4d-edc7f1dcaef5" />
